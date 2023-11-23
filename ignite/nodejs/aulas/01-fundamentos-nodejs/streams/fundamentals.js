@@ -5,7 +5,8 @@
 // Readable Streams / Writable Streams
 // Strems para leitura / Stream para escrever
 
-import {Readable} from 'node:stream'
+import { transcode } from 'node:buffer'
+import {Readable, Writable, Transform} from 'node:stream'
 
 class OneToHundredSteam extends Readable{
     index = 1
@@ -27,5 +28,21 @@ class OneToHundredSteam extends Readable{
     }
 }
 
+class MultiplyByTenStream extends Writable {
+    _write(chunck, encoding, callback){  //chunck é o pedaço que a gente leu no buf //encoding é como é como essa informação está codificada //callback função de escrita que precisa chamar. 
+        console.log(Number(chunck.toString())* 10)
+        callback()
+    }
+}
+
+class InverseNumberStream extends Transform{
+    _transform(chunck,encoding, callback){
+        const transformed = Number(chunck.toString()) * -1
+        callback(null, Buffer.from(String(transformed)))
+    }
+}
+
+
 new OneToHundredSteam()
-    .pipe(process.stdout)
+.pipe(new InverseNumberStream())
+.pipe(new MultiplyByTenStream())
