@@ -53,6 +53,11 @@ html, body, input{
     gap: 7.2rem;
     font-weight: 700;
   }
+
+  a{
+    text-decoration: none;
+    color: var(--color-base-gray-300);
+  }
   
   header form {
     flex: 1;
