@@ -187,8 +187,29 @@ main p{
     width: 15rem;
 
 }
+.item img:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(150%);
+    transform: scale(1.1);
+  }
 
 footer{
     background-color: var(--color-secundary);    
 }
 
+
+
+
+@media (min-width:1024px) {
+
+    #app{
+        display: grid;
+
+        grid-template-areas:
+        "A A A" 
+        "B B C"
+        "D D D"
+        ;
+
+        border: 2px solid green;
+    }
+}
