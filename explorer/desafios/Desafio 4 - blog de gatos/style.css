@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Mulish", sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-main: hsl(0, 0%, 100%);
+    --color-font:hsl(240, 6%, 13%);
+    --color-primary: hsl(195, 91%, 25%);
+    --color-secundary: hsl(195, 46%, 40%);
+}
+
+/*Fontes*/
+h1, h2, p{
+    color: var(--color-font);
+}
+
+form, footer p{
+    color: var(--color-main);
+}
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.sidebar p{
+    font-size: 1.4;
+    width: 400;
+}
+
+footer p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+/*Final das Fontes*/
