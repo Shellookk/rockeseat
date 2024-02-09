@@ -15,9 +15,15 @@
     --color-secundary: hsl(195, 46%, 40%);
 }
 
-/*Fontes*/
+/*color Fontes*/
 h1, h2, p{
     color: var(--color-font);
+}
+
+main p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 160%;
 }
 
 form, footer p{
@@ -35,8 +41,9 @@ h2{
 }
 
 .sidebar p{
-    font-size: 1.4;
+    font-size: 1.4rem;
     width: 400;
+    line-height: 160%;
 }
 
 footer p{
@@ -45,3 +52,154 @@ footer p{
     text-align: center;
 }
 /*Final das Fontes*/
+
+/*Mobile First*/
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+/* configuração do cabeçalho e do footer*/
+    .container{
+    padding: 1.6rem 2.8rem;
+    margin: 0, auto;
+    width:100%;
+    }
+
+    header{
+    background-color: var(--color-primary);
+    
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+    }
+
+    .avatar{
+    width: 4.2rem;
+    height: 4.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*Configuração do campo de busca*/
+    .input-wrapper label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;    
+    }
+
+    .input-wrapper input{
+    width: 100%;
+    padding: 1.4rem;
+
+    background-color: var(--color-secundary);
+    border: 0;
+    border-radius: .4rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;     
+    }
+
+    .input-wrapper input::placeholder{
+    color: var(--color-main);
+    border-style: none;
+}
+
+.img{
+    display: block;
+    
+    width: 42rem;
+    object-fit: cover;
+}
+main{
+    display: flex;
+    flex-direction:column;
+    padding: 0 2.2rem 0  2.2rem;
+    margin-top: 3.1rem;
+    background-color: var(--color-main);
+}
+
+main h1{
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* Botões de Avaliação*/
+    #buttons{
+    display: flex;
+    gap: 1.2rem;
+    align-items: rigth;
+    margin-bottom: 3.1rem;
+    }
+    .rating{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Texto principal*/
+
+main p{
+    width: 38rem, 100%;
+    height: 74rem;
+    text-align: left;
+}
+
+#sidebar{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2.2rem 3.9rem  2.2rem;
+    gap: 3.2rem;
+}
+
+
+
+#sidebar h1{
+    text-align: left;
+    margin-bottom: 3.2rem;
+}
+
+#sidebar a{
+    text-decoration: none;
+}
+
+.item{
+    width: 38rem;
+    display: grid;
+    gap: 1.6rem ;
+    grid-template-columns: 15rem 21rem;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 1fr;
+        
+    
+}
+
+.item img{
+    width: 15rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--color-secundary);    
+}
+
