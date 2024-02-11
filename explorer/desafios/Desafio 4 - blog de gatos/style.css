@@ -65,14 +65,13 @@ footer p{
 /* configuração do cabeçalho e do footer*/
     .container{
     padding: 1.6rem 2.8rem;
-    margin: 0, auto;
+    margin: 0 auto;
     width:100%;
 }
 
 /*Configuração do Cabeçalho*/
 header{
-    background-color: var(--color-primary);
-    
+    background-color: var(--color-primary);    
     display: flex;
     align-items: center;
     text-align: center;
@@ -112,8 +111,7 @@ header{
 }
 
 .img img{
-    display: block;
-    
+    display: block;    
     width: 100%;
     object-fit: cover;
 }
@@ -121,7 +119,6 @@ main{
     display: flex;
     flex-direction:column;
     padding: 0 2.2rem 0  2.2rem;
-    margin-top: 3.1rem;
     background-color: var(--color-main);
     width: min(38rem,100%);
 }
@@ -203,9 +200,25 @@ footer{
         grid-template-areas:
         "A A A" 
         "B B C"
-        "D D D"
-        ;
-
-        border: 2px solid green;
+        "D D D";
     }
+    header{
+        grid-area: A;
+
+    }
+    main{
+        grid-area: B;
+
+    }
+
+    #sidebar{
+        grid-area: C;
+
+    }
+    footer{
+        grid-area: D;
+
+    }
+
+
 }
