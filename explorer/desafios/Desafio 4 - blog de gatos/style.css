@@ -31,7 +31,7 @@ form, footer p{
 }
 
 h1{
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     font-weight: 700;
 }
 
@@ -67,13 +67,15 @@ footer p{
     padding: 1.6rem 2.8rem;
     margin: 0, auto;
     width:100%;
-    }
+}
 
-    header{
+/*Configuração do Cabeçalho*/
+header{
     background-color: var(--color-primary);
     
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 2.6rem;
     }
 
@@ -86,33 +88,33 @@ footer p{
 
 /*Configuração do campo de busca*/
     .input-wrapper label{
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;    
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;    
     }
 
     .input-wrapper input{
-    width: 100%;
-    padding: 1.4rem;
+        width: 100%;
+        padding: 1.4rem;
 
-    background-color: var(--color-secundary);
-    border: 0;
-    border-radius: .4rem;
+        background-color: var(--color-secundary);
+        border: 0;
+        border-radius: .4rem;
 
-    font-size: 1.6rem;
-    font-weight: 600;     
+        font-size: 1.6rem;
+        font-weight: 600;     
     }
 
     .input-wrapper input::placeholder{
-    color: var(--color-main);
-    border-style: none;
+        color: var(--color-main);
+        border-style: none;
 }
 
-.img{
+.img img{
     display: block;
     
-    width: 42rem;
+    width: 100%;
     object-fit: cover;
 }
 main{
@@ -121,6 +123,7 @@ main{
     padding: 0 2.2rem 0  2.2rem;
     margin-top: 3.1rem;
     background-color: var(--color-main);
+    width: min(38rem,100%);
 }
 
 main h1{
@@ -145,19 +148,13 @@ main h1{
 }
 
 
-/* Texto principal*/
-
-main p{
-    width: 38rem, 100%;
-    height: 74rem;
-    text-align: left;
-}
-
 #sidebar{
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 3.4rem;
     padding: 0 2.2rem 3.9rem  2.2rem;
     gap: 3.2rem;
+    width: min(38rem, 100%);
 }
 
 
@@ -171,10 +168,9 @@ main p{
 }
 
 .item{
-    width: 38rem;
     display: grid;
     gap: 1.6rem ;
-    grid-template-columns: 15rem 21rem;
+    grid-template-columns: 0.8fr 1.2fr;
 }
 
 .details{
