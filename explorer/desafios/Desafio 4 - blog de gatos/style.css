@@ -64,9 +64,8 @@ footer p{
 
 /* configuração do cabeçalho e do footer*/
     .container{
-    padding: 1.6rem 2.8rem;
-    margin: 0 auto;
-    width:100%;
+        margin: 0 auto;
+        width:100%;
 }
 
 /*Configuração do Cabeçalho*/
@@ -86,6 +85,9 @@ header{
 }
 
 /*Configuração do campo de busca*/
+    header form{
+        flex: 1;
+    }
     .input-wrapper label{
         width: 1px;
         height: 1px;
@@ -186,7 +188,10 @@ main h1{
   }
 
 footer{
-    background-color: var(--color-secundary);    
+    background-color: var(--color-secundary);
+    padding: 1.6rem 2.8rem;
+    margin: 0 auto;
+    width:100%;
 }
 
 
@@ -196,29 +201,45 @@ footer{
 
     #app{
         display: grid;
+        align-items: flex-start;
 
         grid-template-areas:
-        "A A A" 
-        "B B C"
-        "D D D";
+        "header header"
+        "img sidebar" 
+        "main ."
+        "footer footer";
+        grid-template-rows: auto auto;
+        grid-template-columns: 2fr 1fr;
     }
     header{
-        grid-area: A;
-
+        padding: 1.2rem 11rem;
+        grid-area: header;
     }
+    .img{
+        display: flex;
+        padding-left: 11rem;
+        padding-right: 3.4rem;
+        margin-top: 4.4rem;
+        grid-area: img;
+        max-width: 80rem;
+        max-height: 40rem;
+    }
+
     main{
-        grid-area: B;
-
+        grid-area: main;
+        padding-left: 12rem;
+        padding-right: 3.5rem;
+        width: 100%;
     }
 
-    #sidebar{
-        grid-area: C;
+    sidebar{
+
+        margin-top: 4.4rem;
+        grid-area: sidebar;
 
     }
     footer{
-        grid-area: D;
-
+        grid-area: footer;
     }
-
-
+ 
 }
