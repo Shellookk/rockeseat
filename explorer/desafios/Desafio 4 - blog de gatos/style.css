@@ -149,8 +149,10 @@ main h1{
 
 #sidebar{
     display: grid;
+    position: absolute;
+    right: 0;
+    top: 10rem;
     grid-template-columns: 1fr;
-    margin-top: 3.4rem;
     padding: 0 2.2rem 3.9rem  2.2rem;
     gap: 3.2rem;
     width: min(38rem, 100%);
