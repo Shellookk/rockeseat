@@ -116,6 +116,7 @@ header{
     display: block;    
     width: 100%;
     object-fit: cover;
+    border-radius: 2rem;
 }
 main{
     display: flex;
@@ -130,14 +131,14 @@ main h1{
 }
 
 
-
+#title{
+    margin-bottom: 3.1rem;
+}
 
 /* Botões de Avaliação*/
     #buttons{
     display: flex;
     gap: 1.2rem;
-    align-items: rigth;
-    margin-bottom: 3.1rem;
     }
     .rating{
     width: 4rem;
@@ -149,7 +150,6 @@ main h1{
 
 #sidebar{
     display: grid;
-    position: absolute;
     right: 0;
     top: 10rem;
     grid-template-columns: 1fr;
@@ -181,7 +181,7 @@ main h1{
 }
 
 .item img{
-    width: 15rem;
+    min-width: 15rem;
 
 }
 .item img:hover{
@@ -208,40 +208,54 @@ footer{
         grid-template-areas:
         "header header"
         "img sidebar" 
-        "main ."
+        "main sidebar"
         "footer footer";
-        grid-template-rows: auto auto;
-        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto ;
+        grid-template-columns: 1fr 1fr;
     }
     header{
         padding: 1.2rem 11rem;
         grid-area: header;
     }
-    .img{
+    .img img{
+        
         display: flex;
         padding-left: 11rem;
         padding-right: 3.4rem;
         margin-top: 4.4rem;
         grid-area: img;
-        max-width: 80rem;
-        max-height: 40rem;
+        grid-template-rows: 80rem;
+        min-width: 80rem;
+        min-height: 40rem;
     }
 
     main{
         grid-area: main;
+        padding-top: 3.1rem;
         padding-left: 12rem;
         padding-right: 3.5rem;
+        padding-bottom: 3.9rem;
         width: 100%;
     }
 
-    sidebar{
-
+    #sidebar{
+        min-width: 38rem;
         margin-top: 4.4rem;
         grid-area: sidebar;
 
     }
+
     footer{
         grid-area: footer;
+    }
+    #title{
+        display: flex;
+        gap: 36.6rem;
+        align-items: center
+
+    }
+    #buttons{
+        align-items: center;
     }
  
 }
