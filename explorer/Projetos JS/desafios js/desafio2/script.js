@@ -1,12 +1,33 @@
-/* 
-Nesse desafio você irá criar uma lista de **estudantes** e, cada estudante dentro dessa lista, deverá conter os seguintes dados:
+let listaDeEstudantes = [
+    {
+        nomeDoEstudante: 'Isaque',
+        primeiraNota: 5,
+        segundaNota: 9,
+    },
 
-- nome;
-- nota da primeira prova;
-- nota da segunda prova.
+    {
+        nomeDoEstudante: 'Marcos',
+        primeiraNota: 3,
+        segundaNota: 8,
+    },
 
-Depois de criada a lista:
+    {
+        nomeDoEstudante: 'Sofia',
+        primeiraNota: 9,
+        segundaNota: 5,
+    }        
+];
 
-- [ ]  Crie uma **função** que irá calcular a média das notas de cada aluno;
-- [ ]  Supondo que a média, para esse concurso é **7**, verifique **se** cada aluno obteve sucesso ou não em entrar no concurso e mostre uma mensagem na tela.
-*/
+function calculaMedia(primeiraNota,segundaNota) {
+let media = (primeiraNota + segundaNota) / 2;
+return media;
+}
+   
+
+for(let estudante of listaDeEstudantes){
+    mediaIndividual = calculaMedia(estudante.primeiraNota, estudante.segundaNota);
+    let aprovadoOuNao = mediaIndividual < 7 ? 'Infelizmente não foi dessa vez. Estude mais' : 'Parabéns pela sua aprovação';
+
+    alert(`A média de ${estudante.nomeDoEstudante} é ${mediaIndividual}.
+${aprovadoOuNao}`);
+};       
