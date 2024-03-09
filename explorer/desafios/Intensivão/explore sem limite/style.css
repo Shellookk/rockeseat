@@ -1,0 +1,25 @@
+/* Configurações da página*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Configurações de escala e texto*/
+:root{    
+    font-family: 'Mulish', sans-serif;
+    font-size: 62.5%;
+
+
+    --color-base-pink: #B52184;
+    --color-base-blue:#312D64;
+    --color-base-main: #fff;
+    --color-base-mobile:#F9F4FB;
+
+}
+
+
+
+
