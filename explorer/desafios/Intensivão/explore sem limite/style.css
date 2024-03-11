@@ -7,18 +7,56 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 /* Configurações de escala e texto*/
 :root{    
     font-family: 'Mulish', sans-serif;
     font-size: 62.5%;
 
-
     --color-base-pink: #B52184;
     --color-base-blue:#312D64;
     --color-base-main: #fff;
     --color-base-mobile:#F9F4FB;
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+}
+
+/* Configurações do body*/
+body{
+    background-color: var(--color-base-mobile);
+}
+
+/* Seção 1*/
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#astronauta img{
+    width: 100%;
+}
+
+#hero h1{
+    color: var(--color-base-pink);
+    font-size: 3.2rem;
+    font-weight: 900;
 
 }
+#hero p{
+    color: var(--color-base-blue);
+    font-size: 2.0rem;
+    font-weight: 600;
+}
+
+#hero a img{
+    margin-top: 3.5rem;
+    margin-bottom: 9.3rem;
+}
+
+/* Seção 2 */
+
 
 
 
