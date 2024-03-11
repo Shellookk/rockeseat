@@ -27,37 +27,11 @@ body{
 
 /* Seção 1*/
 
-#hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-#astronauta img{
-    width: 100%;
-}
-
-#hero h1{
-    color: var(--color-base-pink);
-    font-size: 3.2rem;
-    font-weight: 900;
-
-}
-#hero p{
-    color: var(--color-base-blue);
-    font-size: 2.0rem;
-    font-weight: 600;
-}
-
-#hero a img{
-    margin-top: 3.5rem;
-    margin-bottom: 9.3rem;
-}
-
 /* Seção 2 */
 
+/* Seção 3 */
 
+/* footer    */
 
 
 
