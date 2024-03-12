@@ -10,7 +10,6 @@
 
 /* Configurações de escala e texto*/
 :root{    
-    font-family: 'Mulish', sans-serif;
     font-size: 62.5%;
 
     --color-base-pink: #B52184;
@@ -23,7 +22,20 @@
 /* Configurações do body*/
 body{
     background-color: var(--color-base-mobile);
+    font-family: 'Mulish', sans-serif;
 }
+
+/* Formatação textos*/
+
+h1
+
+p
+
+
+
+
+
+
 
 /* Seção 1 */
 
