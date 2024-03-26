@@ -1,3 +1,4 @@
+/* Configurações Globais*/
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +17,35 @@ body{
     place-items: center;
     height: 100vh;
 }
+
+/* Textos */
+body, button, input{
+    font-family: "DM Sans", sans-serif;
+}
+
+button{
+    background-color: #7879F1;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 .4rem .4rem 0;
+    cursor: pointer;
+
+    transition: background .3s;
+}
+button:hover{
+    background-color: #5050b4;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.hide{
+    display: none;
+}
+
 main{
     background: #fff;
     box-shadow: 0rem 0.2rem  0.4rem rgba(0, 0, 0, 0.1);
@@ -25,4 +55,42 @@ main{
     width: min(42.8rem, 90%);
     margin: 0 auto;
     margin-top: -12rem;
+
+    text-align: center;
+}
+
+/* Tela 1*/
+
+form{
+    margin-top: 4.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+h1, p{
+   color: #34355B;
+}
+p{
+    opacity: .8;
+}
+
+input, button{
+    border: none;
+    padding: 1.6rem;
+}
+input{
+    background-color: #DCE2E9;
+    width: 6rem;
+    border-radius: .4rem 0 0 .4rem;
+
+}
+
+/*Tela 2*/
+
+h2{
+    color: #34355B;
+    font-size: 2.4rem;
+    font-family: "DM Sans";
+    font-weight: normal;
+    margin-bottom: 3.3rem;
 }
