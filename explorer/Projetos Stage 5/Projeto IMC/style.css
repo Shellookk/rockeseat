@@ -7,10 +7,68 @@
 
 :root{
     font-size: 62.5%;
+
+    /* Colors*/
+
+    --red-error: #F03E3E;
+    --bg-result: #1E1E1E;
+
+}
+
+/* Fonts*/
+
+h1{
+    color: #0C3440;
 }
 
 
+form label{
+    color: #00453A;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: .8rem;
+    display: block;
+}
+
+form input{
+    color: #212529;
+    background: #DCE2E9;
+    width: 100%;
+    border: 1px solid rgba(73, 80, 87, 0.3);
+    padding: 1.6rem;
+    border-radius: .4rem;
+}
+
+input::placeholder{
+    color: rgba(73, 80, 87, 0.5);
+}
+
+button{
+    background: #02799D;
+    color: #FFFFFF;
+}
+
+.title{
+    font-size: 3.2rem;
+    line-height: 4rem;
+}
+
+form h1{
+    margin-bottom: 3.2rem;
+}
+
+.input-wrapper + .input-wrapper {
+    margin-top: 1.6rem;
+}
+
+form input:focus{
+    outline: 2px solid #02799D;
+}
+
+
+
 body{
+    font-family: "Roboto", sans-serif;
     background: #040924;
 }
 
@@ -29,3 +87,5 @@ body{
     box-shadow: 0 .2rem  .4rem rgba(0, 0, 0, 0.1);
     border-radius: .6rem;
 }
+
+
