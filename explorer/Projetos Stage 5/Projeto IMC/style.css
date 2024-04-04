@@ -11,11 +11,15 @@
     /* Colors*/
 
     --red-error: #F03E3E;
-    --bg-result: #1E1E1E;
+    --bg-result: rgba(0, 0, 0 ,0.7);
 
 }
 
 /* Fonts*/
+body, input, button{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
 
 h1{
     color: #0C3440;
@@ -43,10 +47,34 @@ input::placeholder{
     color: rgba(73, 80, 87, 0.5);
 }
 
-button{
+form button{
     background: #02799D;
     color: #FFFFFF;
+
+
+
+    margin-top: 3.2rem;
+    padding: 1.6rem;
+    width: 100%;
+    border: none;
+    border-radius: .4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background .2s;
 }
+
+form button:hover{
+    background-color: #085f7a;
+}
+
 
 .title{
     font-size: 3.2rem;
@@ -88,4 +116,48 @@ body{
     border-radius: .6rem;
 }
 
+form{
+    width: 30rem;
+}
 
+/* Modal */
+
+.modal-wrapper.open{
+     opacity: 1;
+     visibility: visible;
+}
+
+
+.modal-wrapper{
+    position: absolute;
+    inset: 0;
+    background: var(--bg-result);
+
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    position: relative;
+}
+
+.modal button{
+    background: none;
+    border: none;
+    
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+
+    cursor: pointer;
+
+    transition: transform .3s ;
+
+}
+
+.modal button:hover{
+    transform: scale(1.1);
+}
