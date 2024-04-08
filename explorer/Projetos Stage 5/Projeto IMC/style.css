@@ -47,7 +47,7 @@ input::placeholder{
     color: rgba(73, 80, 87, 0.5);
 }
 
-form button{
+button{
     background: #02799D;
     color: #FFFFFF;
 
@@ -71,7 +71,7 @@ form button{
     transition: background .2s;
 }
 
-form button:hover{
+button:hover{
     background-color: #085f7a;
 }
 
