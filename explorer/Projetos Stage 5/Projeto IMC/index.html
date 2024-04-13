@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+    <!-- meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <!-- styles -->
     <link rel="stylesheet" href="./style.css">
-    <title>Projeto IMC</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- scripts-->
     <script src="./main.js" defer></script>
 </head>
 <body>
@@ -16,41 +26,42 @@
 
     <div class="container">
         <main class="card">
-            <div class="page1">
-                <form action="">
-                    <h1 class="title">Calculadora de IMC</h1>
-                    
-                    <div class="input-wrapper">
-                        <label for="peso">Peso (kg)</label>
-                        <input 
-                            id="peso" 
-                            type="text"
-                            placeholder="60"/>
-                    </div>
+            <form>
+                <h1 class="title">Cálculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input 
+                        id="weight" 
+                        type="text"
+                        placeholder="60" />
+                </div>
 
-                    <div class="input-wrapper">
-                        <label for="altura">Altura (m)</label>
-                        <input 
-                            id="altura" 
-                            type="text"
-                            placeholder="165"/>
-                    </div>
-                </form>
+                <div class="input-wrapper">
+                    <label for="height">Altura (cm)</label>
+                    <input 
+                        id="height" 
+                        type="text"
+                        placeholder="165" />
+                </div>
 
-                <button> Calcular IMC <img src="./arrow.svg" alt=""></button>
-            </div>
-
+                <button type="submit">
+                    Calcular IMC
+                    <img src="./assets/arrow.svg" alt="Seta apontando para direita"> 
+                </button>
+            </form>
         </main>
     </div>
 
     <div class="modal-wrapper">
         <div class="modal card">
             <h2 class="title">
-                
-                <button class="close"> <img src="./close.svg" alt=""></button>
 
-                Seu IMC é de 28</h2>
+                <button class="close">
+                    <img src="./assets/close.svg" alt="imagem para fechar o popup">
+                </button>
 
+                <span>Seu IMC é de 28</span>
+            </h2>
         </div>
     </div>
 
