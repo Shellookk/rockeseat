@@ -1,37 +1,40 @@
-import { controls } from './elements.js'
-import * as actions from './actions.js'
 import state from './state.js'
-import * as elements from './elements.js'
-import { updateDisplay } from './timer.js'
+import { controls } from './elements.js';
+import * as actions from './actions.js'
+import * as el from './elements.js'
+import { updateDisplay } from './timer.js';
 
-export function registerControls(){
-    controls.addEventListener('click', (event)=>{
+
+
+export function registerControls() {
+    controls.addEventListener('click', (event) => {
         const action = event.target.dataset.action
-        if (typeof actions[action] !='function'){
+        if(typeof actions[action] != "function") {
             return
-        
         }
 
         actions[action]()
-        
+
     })
+
 }
 
-export function setMinutes (){
-    elements.minutes.addEventListener('focus', ()=>{
-        elements.minutes.textContent = ''
-    })
+export function setMinutes() {
+ el.minutes.addEventListener('focus', () => {
+    el.minutes.textContent = ""
+ })
 
-    elements.minutes.onkeypress = (event) => /\d/.test(event.key)
+ el.minutes.onkeypress = (event) => /\d/.test(event.key)
 
-    elements.minutes.addEventListener('blur', (event)=>{
-        let time = e.currentTarget.textContent
-        time = time > 60 ? 60: time
+ el.minutes.addEventListener('blur', (event) => {
+    let time = event.currentTarget.textContent
 
-        state.minutes = time
-        state.seconds = 0
+    time = time > 60 ? 60 : time
 
-        updateDisplay()
-        elements.minutes.removeAttribute('contenteditable')
-    })
+    state.minutes = time
+    state.seconds = 0
+
+    updateDisplay()
+    el.minutes.removeAttribute('contenteditable')
+ })
 }
