@@ -5,5 +5,104 @@
 }
 
 :root{
+
+    --bg-color-rain: #02799D;
+    --bg-color-sounds: #E1E1E6;
+    --bg-color-main: #fff;
+    --bg-color-font: #000;
+
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
     font-family: 'Roboto';
 }
+
+/* alterar o fundo*/
+#toggle-mode {
+    position: absolute;
+    right: 3.2rem;
+    top: 3.2rem;
+    font-size: 3.2rem;
+    line-height: 0;
+    color: var(--text-color);
+}
+
+/* Acessibilidade */
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+.secondary{
+    background-color: var(--bg-color-rain);
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+
+    background-color: var(--bg-color-main);
+}
+
+#app{
+    display: flex;
+    gap: 19rem;
+    align-items: center;
+}
+
+#timer{
+    align-items: center;
+    justify-content: center;
+    font-size: 12.6rem;
+    font-weight: 500;
+}
+
+#buttons{
+    margin-top: 4.8rem;
+    display: flex;
+    gap: 4.0rem;
+    justify-content: center;
+}
+
+#buttons button{
+    background-color: transparent;
+    color: var(--bg-color-font);
+    border: none;
+}
+
+
+#sounds button{
+    border: none;
+    background-color: var(--bg-color-sounds);
+    border-radius: 24px;
+    min-width: 13.8rem;
+    min-height: 15.2rem;
+    cursor: pointer;
+}
+
+#sounds #rain{
+    background-color: var(--bg-color-rain);
+}
+
+
+
+
+
+
+
+#sounds{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    background-color: 0;
+    
+}
+
+
+/* enquanto estiver 'running' = a cor será aplicada no button da musica */
