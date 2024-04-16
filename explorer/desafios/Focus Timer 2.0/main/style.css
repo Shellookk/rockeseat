@@ -16,16 +16,6 @@
     font-family: 'Roboto';
 }
 
-/* alterar o fundo*/
-#toggle-mode {
-    position: absolute;
-    right: 3.2rem;
-    top: 3.2rem;
-    font-size: 3.2rem;
-    line-height: 0;
-    color: var(--text-color);
-}
-
 /* Acessibilidade */
 .sr-only {
     width: 1px;
@@ -38,9 +28,6 @@
     appearance: none;
 }
 
-.secondary{
-    background-color: var(--bg-color-rain);
-}
 
 body{
     display: grid;
@@ -60,7 +47,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 12.6rem;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 #buttons{
@@ -72,8 +59,8 @@ body{
 
 #buttons button{
     background-color: transparent;
-    color: var(--bg-color-font);
     border: none;
+    cursor: pointer;
 }
 
 
@@ -89,11 +76,6 @@ body{
 #sounds #rain{
     background-color: var(--bg-color-rain);
 }
-
-
-
-
-
 
 
 #sounds{

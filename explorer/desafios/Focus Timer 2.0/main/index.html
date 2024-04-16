@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
     <link rel="icon" href="/rockeseat/explorer/Desafios/Focus Timer 2.0/assets/imgs/favicon.png">
     <link rel="stylesheet" href="./style.css">
     <script src="/rockeseat/explorer/Desafios/Focus Timer 2.0/scripts/main.js" defer type="module"></script>
@@ -19,12 +18,6 @@
 <body>
     <div id="app">
 
-        <button id="toggle-mode">
-            <span class="sr-only">Ativar light mode </span>
-            <i class="ph-bold ph-sun"></i>
-            <i class="ph-bold ph-moon"></i>
-        </button>
-
         <section id="timer" class="">
             <div id="counter">
                 <span id="minutes">25</span>
@@ -33,18 +26,13 @@
             </div>
 
             <div id="buttons">
-                <button id="play"
-                class="ph ph-play-circle">
-                </button>
-                <button id="stop"
-                class="ph ph-stop-circle">
-                </button>
-                <button id="turnUpVolume"
-                class="ph ph-plus-circle">
-                </button>
-                <button id="decreaseVolume"
-                class="ph ph-minus-circle">
-                </button>
+                <button id="play"> <span class="sr-only">Iniciar Temporizador</span><img src="/rockeseat/explorer/Desafios/Focus Timer 2.0/assets/imgs/play.svg" alt=""></button>
+                
+                <button id="stop"> <span class="sr-only">Pausar Temporizador</span><img src="/rockeseat/explorer/Desafios/Focus Timer 2.0/assets/imgs/stop.svg" alt=""></button>
+                                
+                <button id="turnUpVolume"><span class="sr-only">Aumentar o volume</span><img src="/rockeseat/explorer/Desafios/Focus Timer 2.0/assets/imgs/+.svg" alt=""></button>
+
+                <button id="decreaseVolume"><span class="sr-only">Diminuir o volume</span><img src="/rockeseat/explorer/Desafios/Focus Timer 2.0/assets/imgs/-.svg" alt=""></button>
             </div>
         </section>
     
