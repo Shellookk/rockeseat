@@ -16,3 +16,5 @@ Bora praticar e rever tudo o que foi ensinado na aula? **💜**
 </aside>
 
 A ideia agora é criar o **SPA Universe**! 🚀
+
+https://www.figma.com/file/P6nsCf5E6Fr4bUgP1FyokE/%5BDesafios-Explorer%5D-SPA-Universe-(Copy)?type=design&node-id=104-1334&mode=design&t=bzpS8H7QNWOswwso-0
