@@ -16,7 +16,7 @@
 }
 
 /*Corpo principal*/
-#home{
+#home-page{
     height: 100vh;
     display: grid;
     place-content: center;
@@ -127,4 +127,12 @@ nav a:hover{
     left: 7.2rem;
     top: 4.0rem;
     
+}
+
+
+/* Função para ser chamada*/
+
+.selected{
+    color: var(--color-font-select);
+    font-weight: bold;
 }
