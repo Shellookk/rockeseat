@@ -14,15 +14,13 @@ buttonMoreInfo.addEventListener("click", function(){
     window.location.href ="/universe"
 })
 
-// rotas chamadas
 const router = new Router()
-router.add('/', "/pages/home.html")
-router.add('/home' , "/pages/home.html")
-router.add('/the-universe', "/pages/universe.html")
-router.add('/explorer', "/pages/explorer.html")
-
+router.add("/", "/pages/home.html")
+router.add("/home", "/pages/home.html")
+router.add("/universe", "/pages/universe.html")
+router.add("/explorer", "/pages/explorer.html")
 
 router.handle()
 
 window.onpopstate = () => router.handle()
-window.route = () => router.route()
+window.Route = () => router.Route()
