@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+    font-family: 'Roboto';
+
+    --color-font: #C4C4CC;
+    --color-font-select: #fff;
+    --color-font-text: #E1E1E6;
+    --color-houver-button: #02799D;
+
+}
+
+/*Corpo principal*/
+#home-page{
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url('/Rockeseat/Explorer/Desafios/SPA Universe/assets/mountains-universe-1.png');
+    background-size: 192rem 91rem;
+}
+
+#page-universe{
+    background-image: url('/Rockeseat/Explorer/Desafios/SPA Universe/assets/mountains-universe02.png');
+    background-size: 192rem 91rem;
+}
+
+#page-explorer{
+    background-image: url('/Rockeseat/Explorer/Desafios/SPA Universe/assets/mountains-universe-3.png');
+    background-size: 192rem 91rem;
+}
+
+/*Painel de navegação*/
+.nav-1{
+    position: absolute;
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 17.2rem;
+    align-items: center;
+
+    left: 7.2rem;
+    top: 4.0rem;
+    right: 71.9rem;
+    bottom: 63.8rem;
+}
+
+nav a{
+    font-size: 2.1rem;
+    text-decoration: none;
+    color: var(--color-font);
+    line-height: 2.1rem;
+
+
+}
+nav a:hover{
+    color: var(--color-font-select);
+    font-weight: bold;
+}
+
+/*Conteudo da página*/
+#page-home{
+    display: grid;
+    justify-items: center;    
+}
+
+#page-home h1{
+    font-size: 4.8rem;
+    line-height: 125%;
+    color: var(--color-font-text);
+    margin-bottom: 2.4rem;
+}
+
+#page-home button{
+    background-color: transparent;
+    color: var(--color-font-select);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    padding: 1.2rem 3.2rem;
+
+    border-radius: .5rem;
+    cursor: pointer;
+    border: 2px solid var(--color-font-select);
+}
+
+#page-home button:hover{
+    background-color: var(--color-font-select);
+    color: var(--color-houver-button);
+}
+
+
+/*Página 2 e 3*/
+
+.page{
+    margin-left: 10.2rem;
+    margin-top: 18.5rem;
+
+    display: flex;
+    flex-direction: column;
+    width: 64.8rem;
+}
+
+.page h1{
+    color: var(--color-font-text);
+    font-size: 4.8rem;
+    line-height: 125%;
+    margin-bottom: 1.6rem;
+}
+
+.page p{
+    color: var(--color-font-text);
+    font-size: 1.8rem;
+    line-height: 160%;
+    text-align: left;
+}
+
+.nav-2-3{
+    position: absolute;
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+
+    left: 7.2rem;
+    top: 4.0rem;
+    
+}
+
+
+/* Função para ser chamada*/
+
+.selected{
+    color: var(--color-font-select);
+    font-weight: bold;
+}
