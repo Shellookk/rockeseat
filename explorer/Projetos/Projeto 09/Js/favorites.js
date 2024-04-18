@@ -6,28 +6,17 @@ export class Favorites {
 
     load() {
 
-        this.entries = [{
-            login: 'maykbrito',
-            name: 'Mayk Brito',
-            public_repos: '76',
-            followers: '9589'
-        },
-        {
-            login: 'diego3g',
-            name: 'Diego Fernandes',
-            public_repos: '48',
-            followers: '22503'
-        },
-    ]
+        this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
 
-
-
-    }
+        }
     
     delete(user) {
-       this.entries = this.entries.filter(entry => entry.login !== user.login)
-        
+        const filteredENtries = this.entries.filter(entry => entry.login !== user.login)
+
+        this.entries = filteredENtries
+        this.update()
     }
+
 }
 
 export class FavoritesView extends Favorites {
@@ -88,9 +77,6 @@ export class FavoritesView extends Favorites {
         return tr
 
         }
-
-
-
 
     removeAllTr() {
 
