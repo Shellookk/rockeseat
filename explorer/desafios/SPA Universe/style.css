@@ -2,137 +2,144 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root{
-    font-size: clamp(40%, 1% + 2vw, 62.5%);
-    font-family: 'Roboto';
-
-    --color-font: #C4C4CC;
-    --color-font-select: #fff;
-    --color-font-text: #E1E1E6;
-    --color-houver-button: #02799D;
-
-}
-
-/*Corpo principal*/
-#home-page{
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    line-height: 160%;
+    color: white;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  h1 {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 125%;
+  }
+  
+  /*index style*/
+  
+  header {
+    padding: 4rem 7rem;
+    position: fixed;
+  }
+  
+  header div {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  
+  header div nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  
+  header div nav a {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-decoration: none;
+    opacity: 0.7;
+  
+    transition: all 0.2s;
+  }
+  
+  header div nav a:hover {
+    transform: scale(1.1);
+  }
+  
+  header nav .active {
+    opacity: 1;
+  }
+  
+  /*home style*/
+  #home {
+    width: 100vw;
     height: 100vh;
     display: grid;
     place-content: center;
+    gap: 2.4rem;
+  
     background-image: url('./assets/mountains-universe-1.png');
-    background-size: 192rem 91rem;
-}
-
-#page-universe{
-    background-image: url('./assets/mountains-universe02.png');
-    background-size: 192rem 91rem;
-}
-
-#page-explorer{
-    background-image: url('./assets/mountains-universe-3.png');
-    background-size: 192rem 91rem;
-}
-
-/*Painel de navegação*/
-.nav-1{
-    position: absolute;
-    display: flex;
-    gap: 3.2rem;
-    margin-bottom: 17.2rem;
-    align-items: center;
-
-    left: 7.2rem;
-    top: 4.0rem;
-    right: 71.9rem;
-    bottom: 63.8rem;
-}
-
-nav a{
-    font-size: 2.1rem;
-    text-decoration: none;
-    color: var(--color-font);
-    line-height: 2.1rem;
-
-
-}
-nav a:hover{
-    color: var(--color-font-select);
-    font-weight: bold;
-}
-
-/*Conteudo da página*/
-#page-home{
-    display: grid;
-    justify-items: center;    
-}
-
-#page-home h1{
-    font-size: 4.8rem;
-    line-height: 125%;
-    color: var(--color-font-text);
-    margin-bottom: 2.4rem;
-}
-
-#page-home button{
-    background-color: transparent;
-    color: var(--color-font-select);
-    font-size: 1.4rem;
-    line-height: 2.4rem;
-    font-weight: bold;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #home div {
+    margin-inline: auto;
+  }
+  
+  #home div button {
     padding: 1.2rem 3.2rem;
-
-    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+  
+    transition: all 0.2s;
+  }
+  
+  #home div button:hover {
     cursor: pointer;
-    border: 2px solid var(--color-font-select);
-}
-
-#page-home button:hover{
-    background-color: var(--color-font-select);
-    color: var(--color-houver-button);
-}
-
-
-/*Página 2 e 3*/
-
-.page{
-    margin-left: 10.2rem;
-    margin-top: 18.5rem;
-
-    display: flex;
-    flex-direction: column;
-    width: 64.8rem;
-}
-
-.page h1{
-    color: var(--color-font-text);
-    font-size: 4.8rem;
-    line-height: 125%;
-    margin-bottom: 1.6rem;
-}
-
-.page p{
-    color: var(--color-font-text);
-    font-size: 1.8rem;
-    line-height: 160%;
-    text-align: left;
-}
-
-.nav-2-3{
-    position: absolute;
-    display: flex;
-    gap: 3.2rem;
-    align-items: center;
-
-    left: 7.2rem;
-    top: 4.0rem;
+  
+    background-color: white;
+    color: #02799D;
+  }
+  
+  /*o universo style*/
+  
+  #o-universo {
+    width: 100vw;
+    height: 100vh;
+  
+    background-image: url('./assets/mountains-universe02.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #o-universo div {
+    padding-top: 185px;
+    padding-left: 100px;
+    max-width: 700px;
     
-}
-
-
-/* Função para ser chamada*/
-
-.selected{
-    color: var(--color-font-select);
-    font-weight: bold;
-}
+    text-align: justify;
+  }
+  
+  #o-universo p {
+    margin-top: 1.6rem;
+    opacity: 0.8;
+  }
+  
+  
+  /*exploracao style*/
+  
+  #exploracao {
+    width: 100vw;
+    height: 100vh;
+  
+    background-image: url('./assets/mountains-universe-3.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #exploracao div {
+    padding-top: 185px;
+    padding-left: 100px;
+    max-width: 700px;
+    
+    text-align: justify;
+  }
+  
+  #exploracao p {
+    margin-top: 1.6rem;
+    opacity: 0.8;
+  }
