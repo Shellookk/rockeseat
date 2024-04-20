@@ -72,6 +72,9 @@ body{
     min-height: 15.2rem;
     cursor: pointer;
 }
+#sounds button:hover{
+    border: 2px solid black;
+}
 
 #sounds #rain{
     background-color: var(--bg-color-rain);
