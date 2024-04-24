@@ -10,12 +10,6 @@ function myMiddleWare(request, response, next){
     next()
 }
 
-
-
-
-
-
-
 const usersControler = new UsersController()
 usersRoutes.post("/", usersControler.create)
 
