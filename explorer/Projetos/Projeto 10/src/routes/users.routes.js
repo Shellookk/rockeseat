@@ -1,23 +1,13 @@
-const  {Router} = require("express");
+const { Router } = require('express')
 
-const UsersController = require("../controllers/UsersController")
+const UsersController = require('../controllers/UsersController')
 
 const usersRoutes = Router()
 
+const usersController = new UsersController()
 
-function myMiddleWare(request, response, next){
-    
-    next()
-}
-
-const usersControler = new UsersController()
-usersRoutes.post("/", usersControler.create)
-
-usersRoutes.get("/", (request, response) =>{
-    const {page, limit} = request.query;
-
-    response.send(`Página ${page}. Mostrar: ${limit}.`)
-})
+usersRoutes.post('/', usersController.create)
+usersRoutes.put('/:id', usersController.update)
 
 
-module.exports = usersRoutes;
+module.exports = usersRoutes
