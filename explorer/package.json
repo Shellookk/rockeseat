@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "styled-components": "^6.1.8"
   }
 }
