@@ -1,13 +1,12 @@
-import { Container } from "./style"
+import { Container } from './style'
 
-export function Details(){
-  
+import { Button } from '../../components/Button'
 
-  return(
+export function Details() {
+  return (
     <Container>
-      
-      <h1>hello world</h1>
-
+     
+      <Button title="Voltar" />
     </Container>
   )
 }
