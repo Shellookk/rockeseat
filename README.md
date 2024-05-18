@@ -1,3 +1,5 @@
+#Seja bem-vindo ao repositório dos projetos da RocketSeat
+
 # rockeseat
 Reposiotorio para projetos rocketseat.
 
